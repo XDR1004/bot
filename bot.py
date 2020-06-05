@@ -10,7 +10,7 @@ from colorsys import hls_to_rgb
 client = discord.Client()
 dothething = {}
 
-#bot_key = "NjUzMTE1NTkwMzIzNDcwMzQ2.XtpzsQ.kOJrm-1i8CfohwGzdB4v6U_Lzi0"
+bot_key = "NjUzMTE1NTkwMzIzNDcwMzQ2.XtpzsQ.kOJrm-1i8CfohwGzdB4v6U_Lzi0"
 
 @client.event
 async def on_ready():
@@ -64,6 +64,3 @@ async def on_message(message):
                                 else:
                                         await asyncio.sleep(10)
 client.run(bot_key)
-token = os.environ.get('BOT_TOKEN')
-
-bot.ru(str(token))
