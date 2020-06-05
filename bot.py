@@ -4,13 +4,13 @@ import discord
 import asyncio
 from time import sleep
 from colorsys import hls_to_rgb
-
+import os
 
 
 client = discord.Client()
 dothething = {}
 
-bot_key = "NjUzMTE1NTkwMzIzNDcwMzQ2.XtqAMQ.CfmsaTcD8A8r80fPoKCkfcYQd1k"
+
 
 @client.event
 async def on_ready():
@@ -63,4 +63,5 @@ async def on_message(message):
                                                         dothething[str(message.server.id)]=0
                                 else:
                                         await asyncio.sleep(10)
-client.run(bot_key)
+token = os.environ.get('BOT_TOKEN')
+bot.ru(str(token))
