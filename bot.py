@@ -10,7 +10,7 @@ from colorsys import hls_to_rgb
 client = discord.Client()
 dothething = {}
 
-bot_key = "NjUzMTE1NTkwMzIzNDcwMzQ2.XtpzsQ.kOJrm-1i8CfohwGzdB4v6U_Lzi0"
+bot_key = "NjUzMTE1NTkwMzIzNDcwMzQ2.Xtp_EA.ksEcxSBvd1uZqkIj43HPma4CERE"
 
 @client.event
 async def on_ready():
